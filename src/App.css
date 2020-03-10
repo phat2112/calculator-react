@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.calculator{
+  width:300px;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result{
+  width:100%;
+  height:100px;
+  background:#00dcff;
+  color:black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calculating-block{
+  width:inherit;
+  height:50px;
+  background:rgba(0,0,0,.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calculate-input{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.number{
+  width:100px;
+  height:50px;
+  background:transparent;
 }
+.calculate-method{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width:100%;
+  cursor:pointer;
+}
+.calculate-method :focus{
+  outline:none;
+}
+.method{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border:none;
+  margin-top:10px;
+  font-size:25px;
+  cursor:pointer;
+}
+.method:nth-child(1){
+  background:rgba(128,0,128,.5);
+}
+.method:nth-child(2){
+  background:#F7AF55;
+}
+.method:nth-child(3){
+  background:#FF9BCF;
+}
+.method:nth-child(4){
+  background:#51CEF2;
+  font-size:30px;
+}
+.button-calculate{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  margin-top:10px;
+}
+button{
+  width:48%;
+  height:30px;
+  font-size:25px;
+  border-radius:5px;
+  cursor:pointer;
+}
+button:focus{
+  outline:none;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.delete-button{
+  border: 1px solid #FF9BCF;
+  color: #FF9BCF;
+  background:#FAFAFA;
+}
+.calculating-button{
+  border:1px solid #CDE9D2;
+  color: #CDE9D2;
+  background:#FAFAFA;
+
 }
